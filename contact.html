@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juvan Emanuel D. Paulo - Contact</title>
+    <link rel="stylesheet" href="profile.css">
+    <link rel="stylesheet" href="screen.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+
+    <nav id="desktop-nav">
+        <a class="logo">Juvan!</a>
+        <ul class="navigation-bar">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="interests.html">Achievements</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <nav id="mobile-nav">
+        <div class="hamburger-bar">
+            <div class="logo">Juvan!</div>
+            <div class="hamburger-menu">
+                <div class="hamburger-icon" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="menu-links">
+                    <li><a href="index.html" onclick="toggleMenu()">Home</a></li>
+                    <li><a href="about.html" onclick="toggleMenu()">About</a></li>
+                    <li><a href="interests.html" onclick="toggleMenu()">Achievements</a></li>
+                    <li><a href="contact.html" onclick="toggleMenu()">Contact</a></li>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section id="contact">
+        <div class="contactMe">
+            <div class="contact-container">
+                <div class="left">
+                    <h1 class="title">Contact <span>Me!</span></h1>
+                    <p><i class="material-icons">send</i> juvanpaulo@gmail.com</p>
+                    <p><i class="material-icons">send</i>paulojd@students.nu-fairview.edu.ph</p>
+                    <p><i class="material-icons">phone_android</i>09996874402</p>
+                    <div class="socials">
+                        <a href="https://www.linkedin.com/in/juvan-emanuel-paulo-126198175/" class="fa fa-linkedin"></a>
+                        <a href="https://github.com/naori11" class="fa fa-github"></a>
+                        <a href="https://www.facebook.com/juvannnn" class="fa fa-facebook"></a>
+                        <a href="https://www.facebook.com/juvannnn" class="fa fa-twitter"></a>
+                    </div>
+                    <div class="cv-button">
+                        <button class="btn" onclick="window.open('./assets/Resume-Juvan-Emanuel-Paulo.pdf')">DOWNLOAD CV</button>   
+                    </div>
+                </div>
+                <div class="right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your name" required>
+                        <input type="email" name="Email" placeholder="Your email" required>
+                        <textarea name="Message" rows="6" placeholder="Your message here" required></textarea>
+                        <a href="login.php" class ="btn">Get in Touch</a>                        
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="credits">
+        <p><span>Made by</span>: Juvan Emanuel Paulo | BSIT - MI 222</p>
+    </div>
+</body>
+</html>

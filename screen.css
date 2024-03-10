@@ -1,0 +1,88 @@
+@media screen and (max-width: 1400px) {
+    #details {
+      height: 83vh;
+      margin-bottom: 6rem;
+    }
+}
+
+@media screen and (max-width: 1240px) {
+    #desktop-nav {
+        display: none;
+    }
+    #mobile-nav {
+        display: flex;
+    }
+    section {
+        height: fit-content;
+        margin: 0 5%;
+    }
+    #home {
+        display: block;
+        justify-content: center;
+    }
+    .images {
+        width: 275px;
+        height: 275px;
+        margin: 0 auto 2rem;
+    }
+
+    #about {
+        flex-direction: row;
+        align-items: center;
+        text-align: left;
+    }
+
+    .aboutImages {
+        margin-right: 20px; /* Add spacing between image and text on smaller screens */
+    }
+
+    .aboutMe {
+        order: 1; /* Keep aboutMe on the left */
+        margin-right: 20px; /* Add spacing between image and aboutMe on smaller screens */
+    }
+
+    .details {
+        order: 2; /* Move details to the right */
+        width: auto; /* Auto width for smaller screens */
+        max-width: none; /* Reset max-width */
+    }
+}
+
+@media (max-width: 1024px) {
+    /* Desktop adjustments */
+    #desktop-nav {
+        display: none;
+    }
+    #mobile-nav {
+        display: block;
+    }
+    .navigation-bar {
+        flex-direction: column;
+    }
+    .navigation-bar a {
+        margin-left: 0;
+    }
+    .about-container, .interests {
+        flex-direction: column;
+    }
+    .content-container {
+        flex-direction: column;
+    }
+    .aboutImages, .juvanInfo {
+        width: 100%;
+        margin-right: 0;
+    }
+    .experience-details-container {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 768px) {
+    /* Tablet adjustments */
+    /* Additional styles for tablets can be added here */
+}
+
+@media (max-width: 600px) {
+    /* Mobile adjustments */
+    /* Additional styles for mobile can be added here */
+}
